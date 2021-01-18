@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-size: 1.75em;
+    padding: 2%;
+    text-align: center;
+}
+
+
+#title1, #title2, #title3{
+    font-size: 1.25em;
+    border: 1px solid black;
+    width: 115px;
+}
+
+#sec1{
+    margin: 1em;
+    padding: 2em 1em 1em 1em;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 30%;
+    float: left;
+    position: relative;
+    background-color: #cdfdbc;
+}
+
+#title1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+    padding: 2px;
+    opacity: 1;
+    overflow: auto;
+    background-color: rgb(215, 129, 255);
+}
+
+#sec2{
+    margin: 1em;
+    padding: 2em 1em 1em 1em;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 30%;
+    float: right;
+    position: relative;
+    background-color: #cdfdbc;
+}
+
+#title2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+    padding: 2px;
+    opacity: 1;
+    overflow: auto;
+    background-color:#29ff7b;
+}
+
+#sec3{
+    margin: 1em;
+    padding: 2em 1em 1em 1em;
+    border: 1px solid black;
+    box-sizing: border-box;
+    width: 30%;
+    float: right;
+    position: relative;
+    background-color:  #cdfdbc;
+}
+#title3{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid black;
+    padding: 2px;
+    opacity: 1;
+    overflow: auto;
+    background-color: #ff7c2f;
+}
+
+
+@media(min-width:992px){
+    
+    #sec2, #sec1, #sec3{
+        float:left;
+        margin: 1%;
+    }
+    
+    #sec1{
+        width: 30%;
+    }
+    
+    #sec2{
+        width: 30%;
+    }
+
+    #sec3{
+        width: 30%;
+    }
+    
+}
+
+@media(min-width:768px) and (max-width:991px){
+    #sec2, #sec1, #sec3{
+        float:left;
+        margin: 1%;
+    } 
+    #sec1{
+        width: 48%;
+    }
+    
+    #sec2{
+        width: 48%;
+    }
+
+    #sec3{
+        width: 98%;
+    } 
+    
+}
+
+@media(max-width:767px){
+    #sec2, #sec1, #sec3{
+        float:left;
+        margin: 2%;
+        width: 96%;
+    } 
+}
